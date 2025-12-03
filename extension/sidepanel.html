@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Note Scanner</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Note Scanner</h1>
+    </header>
+
+    <div class="tab-content active">
+      <div class="section">
+        <div class="upload-area" id="upload-area">
+          <input type="file" id="file-input" accept=".pdf,.png,.jpg,.jpeg" style="display: none;">
+          <div class="upload-placeholder">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <p>Drag & drop PDF or images</p>
+            <p class="upload-hint">or click to browse</p>
+          </div>
+          <div class="upload-compact-info">
+            <span>✓</span>
+            <span id="compact-filename">slides.pdf</span>
+          </div>
+          <div class="upload-actions">
+            <span class="upload-change-btn">Change</span>
+            <button class="upload-remove-btn" id="remove-file-btn" title="Remove file">✕</button>
+          </div>
+        </div>
+        <div id="upload-status" class="upload-status hidden"></div>
+      </div>
+
+      <div class="section">
+        <button id="scan-button" class="scan-button" disabled>
+          <span class="button-text">Scan Notes</span>
+          <span class="spinner hidden"></span>
+        </button>
+        <div id="scan-progress" class="scan-progress hidden"></div>
+      </div>
+
+      <div id="results" class="results hidden">
+        <div id="results-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

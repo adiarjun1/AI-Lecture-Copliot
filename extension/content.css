@@ -1,0 +1,19 @@
+.ai-suggestion {
+  background-color: #f0f0f0 !important;
+  color: #666 !important;
+  padding: 2px 4px !important;
+  border-radius: 2px !important;
+  font-style: italic;
+}
+
+.ai-misconception {
+  background-color: #fff3e0 !important;
+  border-left: 3px solid #ff9800 !important;
+  padding: 2px 4px !important;
+  cursor: help;
+}
+
+.ai-misconception:hover {
+  background-color: #ffe0b2 !important;
+}
+
