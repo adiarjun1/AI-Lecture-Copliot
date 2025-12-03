@@ -2,12 +2,14 @@
 
 Chrome extension that analyzes Google Docs lecture notes against uploaded slides to generate quiz questions and detect misconceptions.
 
+# Open Source Code Used
+Used some sample/documentation code for connecting the OpenAI API.
+
 ## Features
 
 - Upload lecture slides (PDF or images)
 - Automatic detection of which slides are covered by your notes
 - Interactive quiz questions based on covered slides
-- Misconception detection with corrections
 - Questions refresh to test different topics
 
 ## Setup
