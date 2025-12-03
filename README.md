@@ -18,13 +18,11 @@ Used some sample/documentation code for connecting the OpenAI API.
 
 ```bash
 cd backend
-python3 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
-
-# Install system dependencies
-# macOS: brew install poppler tesseract
-# Linux: sudo apt-get install poppler-utils tesseract-ocr
+pip install "sentence-transformers==2.2.2" "huggingface-hub==0.20.3"
 
 # Create .env file with OPENAI_API_KEY
 echo "OPENAI_API_KEY=your_key_here" > .env
